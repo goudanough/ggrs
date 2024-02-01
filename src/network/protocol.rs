@@ -25,7 +25,7 @@ const SYNC_RETRY_INTERVAL: Duration = Duration::from_millis(200);
 const RUNNING_RETRY_INTERVAL: Duration = Duration::from_millis(200);
 const KEEP_ALIVE_INTERVAL: Duration = Duration::from_millis(200);
 const QUALITY_REPORT_INTERVAL: Duration = Duration::from_millis(200);
-const MAX_PAYLOAD: usize = 467; // 512 is max safe UDP payload, minus 45 bytes for the rest of the packet
+const MAX_PAYLOAD: usize = 1455; // Assuming MTU is 1500, minus 45 bytes for the rest of the packet
 /// Number of old checksums to keep in memory
 pub const MAX_CHECKSUM_HISTORY_SIZE: usize = 32;
 
